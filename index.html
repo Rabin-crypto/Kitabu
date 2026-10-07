@@ -1,122 +1,116 @@
 <!DOCTYPE html>
 <html lang="sw">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chunusi Zimeisha, Lakini Mabaka Yamebaki?</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.7;
-            color: #333;
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 40px 20px;
-            background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
-            min-height: 100vh;
-        }
-        .container {
-            background: #ffffff;
-            padding: 40px 30px;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-        }
-        h1 {
-            color: #1a2a3a;
-            font-size: 28px;
-            text-align: center;
-            margin-bottom: 5px;
-            font-weight: 700;
-        }
-        .subtitle {
-            font-size: 16px;
-            color: #7f8c8d;
-            text-align: center;
-            margin-top: 0;
-            margin-bottom: 30px;
-            font-style: italic;
-        }
-        p {
-            font-size: 16px;
-            color: #4a5568;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 25px 0;
-        }
-        li {
-            background: #f8fafc;
-            margin: 12px 0;
-            padding: 16px 20px;
-            border-left: 4px solid #3498db;
-            border-radius: 4px 12px 12px 4px;
-            font-size: 15px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.02);
-        }
-        .price-tag {
-            text-align: center;
-            font-size: 24px;
-            font-weight: bold;
-            color: #e74c3c;
-            margin: 30px 0 15px 0;
-            padding: 15px;
-            border-top: 2px dashed #e2e8f0;
-            border-bottom: 2px dashed #e2e8f0;
-        }
-        .payment-methods {
-            text-align: center;
-            font-size: 14px;
-            color: #718096;
-            margin-top: 20px;
-        }
-        .btn-whatsapp {
-            display: block;
-            background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%);
-            color: white;
-            text-align: center;
-            padding: 16px 25px;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 18px;
-            border-radius: 50px;
-            box-shadow: 0 6px 20px rgba(46, 204, 113, 0.4);
-            transition: all 0.3s ease;
-        }
-        .btn-whatsapp:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(46, 204, 113, 0.5);
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chunusi Zimeisha, Lakini Mabaka Yamebaki?</title>
+  <meta name="description" content="Mwongozo wa Kiswahili wa kuelewa, kuzuia na kupunguza mabaka yaliyoachwa na chunusi. Tsh 2,000 tu.">
+  <meta property="og:title" content="Chunusi Zimeisha, Lakini Mabaka Yamebaki?">
+  <meta property="og:description" content="Mwongozo wa Kiswahili wa kuelewa, kuzuia na kupunguza mabaka ya chunusi. Tsh 2,000 tu.">
+  <meta property="og:type" content="website">
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+      line-height: 1.7;
+      color: #333;
+      margin: 0;
+      padding: 30px 16px;
+      background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
+      min-height: 100vh;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 35px 25px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    }
+    h1 {
+      color: #1a2a3a;
+      font-size: 26px;
+      text-align: center;
+      margin: 0 0 8px;
+    }
+    .subtitle {
+      font-size: 16px;
+      color: #7f8c8d;
+      text-align: center;
+      font-style: italic;
+      margin: 0 0 25px;
+    }
+    p { font-size: 16px; color: #4a5568; }
+    h3 { color: #1a2a3a; margin-top: 30px; }
+    ul { list-style: none; padding: 0; margin: 15px 0; }
+    li {
+      background: #f8fafc;
+      margin: 12px 0;
+      padding: 14px 18px;
+      border-left: 4px solid #3498db;
+      border-radius: 4px 12px 12px 4px;
+      font-size: 15px;
+    }
+    .price-tag {
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      color: #e74c3c;
+      margin: 30px 0 20px;
+      padding: 15px;
+      border-top: 2px dashed #e2e8f0;
+      border-bottom: 2px dashed #e2e8f0;
+    }
+    .btn-whatsapp {
+      display: block;
+      background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%);
+      color: #fff;
+      text-align: center;
+      padding: 16px 20px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
+      border-radius: 50px;
+      box-shadow: 0 6px 20px rgba(46,204,113,0.4);
+    }
+    .btn-whatsapp:active { transform: scale(0.98); }
+    .payment, .note {
+      text-align: center;
+      font-size: 14px;
+      color: #718096;
+    }
+    .payment { margin-top: 20px; }
+    .note { font-size: 12px; margin-top: 15px; }
+  </style>
 </head>
 <body>
 
 <div class="container">
-    <h1>Chunusi Zimeisha, Lakini Mabaka Yamebaki? 😔</h1>
-    <p class="subtitle">Mwongozo wa Kiswahili wa kuelewa, kuzuia na kupunguza mabaka yaliyoachwa na chunusi.</p>
-    
-    <p>Huna haja ya kutumia mamilioni kwenye vipodozi vikali vinavyoharibu ngozi. Mwongozo huu unakupa majibu yote unayohitaji kwa lugha rahisi ya Kiswahili.</p>
-    
-    <h3>Utajifunza nini?</h3>
-    <ul>
-        <li>🧬 <strong>Siri:</strong> Kwa nini mabaka hubaki baada ya chunusi kuisha.</li>
-        <li>🛡️ <strong>Kinga:</strong> Jinsi ya kuzuia mabaka mapya yasitokee kabisa.</li>
-        <li>✨ <strong>Njia:</strong> Hatua salama za kupunguza na kufuta mabaka yaliyopo.</li>
-    </ul>
+  <h1>Chunusi Zimeisha, Lakini Mabaka Yamebaki? 😔</h1>
+  <p class="subtitle">Mwongozo wa Kiswahili wa kuelewa, kuzuia na kupunguza mabaka yaliyoachwa na chunusi.</p>
 
-    <div class="price-tag">
-        Bei ya Leo: Tsh 2,000 tu!
-    </div>
+  <p>Huna haja ya kutumia pesa nyingi kwenye vipodozi vikali vinavyoweza kuharibu ngozi. Mwongozo huu unakupa majibu unayohitaji kwa lugha rahisi ya Kiswahili.</p>
 
-   <!-- 255769446706 -->
+  <h3>Utajifunza nini?</h3>
+  <ul>
+    <li>🧬 <strong>Sababu:</strong> Kwa nini mabaka hubaki baada ya chunusi kuisha.</li>
+    <li>🛡️ <strong>Kinga:</strong> Jinsi ya kuzuia mabaka mapya yasitokee.</li>
+    <li>✨ <strong>Njia:</strong> Hatua salama za kupunguza mabaka yaliyopo.</li>
+  </ul>
 
-    <a href="https://whatsapp.com" class="btn-whatsapp" target="_blank">
-        🟢 NUNUA KUPITIA WHATSAPP
-    </a>
+  <div class="price-tag">Bei: Tsh 2,000 tu!</div>
 
-    <div class="payment-methods">
-        <p>Lipa kwa urahisi ukitumia <strong>M-Pesa</strong> au <strong>HaloPesa</strong> ukifika WhatsApp.</p>
-    </div>
+  <a class="btn-whatsapp"
+     href="https://wa.me/255769446706?text=Habari%2C%20nataka%20kununua%20kitabu%20cha%20Chunusi%20Zimeisha%2C%20Lakini%20Mabaka%20Yamebaki"
+     target="_blank" rel="noopener">
+    🟢 NUNUA KUPITIA WHATSAPP
+  </a>
+
+  <div class="payment">
+    Lipa kwa urahisi kwa <strong>M-Pesa</strong> au <strong>HaloPesa</strong> ukifika WhatsApp.
+  </div>
+
+  <p class="note">Matokeo hutofautiana kati ya mtu na mtu. Kwa tatizo kubwa la ngozi, muone daktari wa ngozi.</p>
 </div>
 
 </body>
